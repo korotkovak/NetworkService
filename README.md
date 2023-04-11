@@ -28,3 +28,6 @@
 ![ScreenService](https://github.com/korotkovak/NetworkService/blob/develop/Sources/IImages/Service.png)
 
 ---
+5. Загружаем данные в массив для дальнейшего использования
+
+![ScreenService](https://github.com/korotkovak/NetworkService/blob/develop/Sources/IImages/FetchData.png)
