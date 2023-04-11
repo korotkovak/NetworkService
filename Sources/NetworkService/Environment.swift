@@ -16,7 +16,7 @@ import Foundation
 //    }
 //}
 
-public protocol Environment: AnyObject {
+public protocol Environment {
     var scheme: String { get }
     var host: String { get }
     var baseURL: String { get }
