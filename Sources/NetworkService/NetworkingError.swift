@@ -10,8 +10,8 @@ import Foundation
 public enum NetworkingError: String, Error {
     case invalidPath = "Invalid Path"
     case decoding = "There was an error decoding the type"
-    case invalidParameters
-    case invalidData
+    case invalidParameters = "Invalid Parameters"
+    case invalidData = "Invalid Data"
     case unknownError = "Unknown error"
 }
 

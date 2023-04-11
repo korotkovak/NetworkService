@@ -7,15 +7,8 @@
 
 import Foundation
 
-//public class Environment {
-//    static public var scheme = "https"
-//    static public var host = "gateway.marvel.com"
-//
-//    static var baseURL: String {
-//        "\(Environment.scheme)://\(Environment.host)"
-//    }
-//}
-
+/// This protocol configures the Environment for your API.
+/// The protocol includes: scheme and host.
 public protocol Environment {
     var scheme: String { get }
     var host: String { get }

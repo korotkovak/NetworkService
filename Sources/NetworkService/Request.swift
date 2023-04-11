@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// This enum configures the HTTPMethod.
+/// The protocol includes: get, post, put, delete.
 public enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"

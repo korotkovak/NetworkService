@@ -20,6 +20,10 @@ public class NetworkDispatcherImpl: NetworkDispatcher {
         self.environment = environment
     }
 
+    /// Returns data depending on the HTTPMethod selection.
+    ///
+    /// - Parameters:
+    ///   - model: This is your end API that you build in Endpoint.
     @available(iOS 13.0.0, *)
     public func request<T: Decodable>(_ model: any Request) async throws -> T {
         let baseURL = environment.baseURL + model.endpoint.path
