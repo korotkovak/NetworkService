@@ -14,7 +14,7 @@ public protocol NetworkDispatcher {
 
 public class NetworkDispatcherImpl: NetworkDispatcher {
 
-    private weak var environment: Environment?
+    private var environment: Environment
 
     public init(environment: Environment) {
         self.environment = environment
@@ -22,7 +22,7 @@ public class NetworkDispatcherImpl: NetworkDispatcher {
 
     @available(iOS 13.0.0, *)
     public func request<T: Decodable>(_ model: any Request) async throws -> T {
-        let baseURL = (environment?.baseURL ?? "") + model.endpoint.path
+        let baseURL = environment.baseURL + model.endpoint.path
         guard var components = URLComponents(string: baseURL) else {
             throw NetworkingError.invalidPath
         }
