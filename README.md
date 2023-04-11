@@ -98,8 +98,8 @@ enum ComicsEndpoint: Endpoint {
 
 ---
 4. Формируем get запрос: 
-     - определяем Request
-     - создаем networkDispatcher и передаем в него созданный ComicsEnvironment
+     - определяем Request.
+     - создаем networkDispatcher и передаем в него созданный ComicsEnvironment.
      - создаем метод, через который загружаем данные в модель. В данном примере получаем массив комиксов. Метод обязан выбрасывать ошибки и работать асинронно, для этого добавляем async throws.
      - Перед вызовом request у networkDispatcher нужно добавить try await, потому что метод request выбрасывает ошибки.
      
@@ -126,7 +126,7 @@ final class ComicsServiceImpl: ComicsService {
 ```
 
 ---
-5. Загружаем данные в массив для дальнейшего использования
+5. Загружаем данные в массив для дальнейшего использования.
 
 ```
 var comics = [Comic]()
