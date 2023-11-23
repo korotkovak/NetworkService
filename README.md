@@ -1,6 +1,10 @@
-# NetworkService
+## Описание
 
-Пример использования API marvel
+NetworkService - Swift Package для сетевого слоя, который позволяет получать данные через API и выполнять запросы типа GET, POST, PUT и DELETE. 
+
+Стэк: Foundation, URLRequest.
+
+# Пример использования API marvel
 
 ## GET запрос
 
