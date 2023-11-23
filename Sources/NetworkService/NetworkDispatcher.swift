@@ -2,7 +2,7 @@
 //  NetworkDispatcher.swift
 //  MarvelComicsAlamofire
 //
-//  Created by Nikita Kazakov on 02.04.2023.
+//  Created by Kristina Korotkova on 02.04.2023.
 //
 
 import Foundation
